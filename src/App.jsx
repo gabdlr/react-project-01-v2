@@ -1,9 +1,16 @@
+import Header from "./components/layout/Header";
+import Formulario from "./components/Formulario";
+import ListadoPacientes from "./components/ListadoPacientes";
 
 function App() {
 
   return (
-    <div className="App">
-      <h1>Gabriel es lo mas :D</h1>
+    <div className="container mx-auto">
+      <Header/>
+      <div className="mt-12 md:flex">
+        <Formulario/>
+        <ListadoPacientes/>
+      </div>
     </div>
   )
 }
